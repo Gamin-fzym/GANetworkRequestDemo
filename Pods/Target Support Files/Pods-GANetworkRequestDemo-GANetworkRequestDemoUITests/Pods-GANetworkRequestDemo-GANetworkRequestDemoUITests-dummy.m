@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_GANetworkRequestDemo_GANetworkRequestDemoUITests : NSObject
+@end
+@implementation PodsDummy_Pods_GANetworkRequestDemo_GANetworkRequestDemoUITests
+@end

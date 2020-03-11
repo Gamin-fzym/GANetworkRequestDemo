@@ -1,0 +1,6 @@
+framework module Pods_GANetworkRequestDemo_GANetworkRequestDemoUITests {
+  umbrella header "Pods-GANetworkRequestDemo-GANetworkRequestDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

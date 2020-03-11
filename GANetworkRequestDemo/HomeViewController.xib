@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="GANetworkRequestDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="selectCityBut" destination="AWZ-7Z-F7z" id="Xnq-5n-IsF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWZ-7Z-F7z">
+                    <rect key="frame" x="15" y="88" width="366" height="30"/>
+                    <state key="normal" title="选择城市-AFNetworking|MJRefresh|MJExtension混编"/>
+                    <connections>
+                        <action selector="tapCityListAction:" destination="-1" eventType="touchUpInside" id="B9Z-ZH-lY7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKI-05-UbR">
+                    <rect key="frame" x="15" y="148" width="342" height="30"/>
+                    <state key="normal" title="选择城市- Alamofire|PullToRefreshKit|HandyJSON"/>
+                    <connections>
+                        <action selector="tapCityListAction:" destination="-1" eventType="touchUpInside" id="wcC-UD-SFF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKc-XM-mKj">
+                    <rect key="frame" x="15" y="208" width="286" height="30"/>
+                    <state key="normal" title="选择城市- Moya|GTMRefresh|SwiftyJSON"/>
+                    <connections>
+                        <action selector="tapCityListAction:" destination="-1" eventType="touchUpInside" id="GXQ-W0-Jrk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FKc-XM-mKj" firstAttribute="leading" secondItem="LAf-6t-efd" secondAttribute="leading" constant="15" id="A3k-SX-E6I"/>
+                <constraint firstItem="FKc-XM-mKj" firstAttribute="top" secondItem="JKI-05-UbR" secondAttribute="bottom" constant="30" id="RBg-Wh-eUT"/>
+                <constraint firstItem="AWZ-7Z-F7z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="THb-vv-u5i"/>
+                <constraint firstItem="JKI-05-UbR" firstAttribute="leading" secondItem="LAf-6t-efd" secondAttribute="leading" constant="15" id="iZu-ps-lIR"/>
+                <constraint firstItem="AWZ-7Z-F7z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="r6V-az-c9A"/>
+                <constraint firstItem="JKI-05-UbR" firstAttribute="top" secondItem="AWZ-7Z-F7z" secondAttribute="bottom" constant="30" id="wKR-yw-Dr8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="LAf-6t-efd"/>
+            <point key="canvasLocation" x="-142.02898550724638" y="133.92857142857142"/>
+        </view>
+    </objects>
+</document>
